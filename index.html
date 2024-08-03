@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="email"], .login-container input[type="password"] {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .login-container input[type="checkbox"] {
+            width: auto;
+        }
+
+        .login-container label {
+            color: white;
+        }
+
+        .login-container a {
+            color: #00f;
+            text-decoration: none;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #6a1b9a;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background: #8e24aa;
+        }
+
+        .login-container .footer {
+            margin-top: 20px;
+        }
+
+        .designed-by {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .designed-by a {
+            color: #00f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <input type="email" placeholder="Type your email here..." required>
+        <input type="password" placeholder="Type your password here..." required>
+        <div>
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <a href="#">Forgot Password?</a>
+        <button>Log in</button>
+        <div class="footer">
+            <span>Don’t Have an Account? <a href="#">Create Account</a></span>
+        </div>
+    </div>
+    <div class="designed-by">
+        Designed by <a href="https://x.com/Abdulsamadmur12?s=09" target="_blank">@Abdulsamadmur12</a>
+    </div>
+</body>
+</html>
